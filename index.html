@@ -17,7 +17,29 @@
 
     <div class="section projects">
       <h2>Projekty</h2>
-      <div id="project-list" class="project-grid"></div>
+      <p>Brak projektów do wyświetlenia. Wkrótce pojawią się nowe narzędzia!</p>
+    </div>
+
+    <div class="section pricing">
+      <h2>Cennik</h2>
+      <div class="pricing-grid">
+        <div class="pricing-box">
+          <h3>Pakiet XX</h3>
+          <p>Podstawowe narzędzie lub skrypt</p>
+          <p class="price">Cena: 20 zł</p>
+        </div>
+        <div class="pricing-box">
+          <h3>Pakiet XXX</h3>
+          <p>Zaawansowane narzędzie z GUI</p>
+          <p class="price">Cena: 50 zł</p>
+        </div>
+        <div class="pricing-box">
+          <h3>Indywidualne zlecenie</h3>
+          <p>Opisz co chcesz, a ja to zrobię</p>
+          <p class="price">Cena do ustalenia</p>
+        </div>
+      </div>
+      <p class="note">Masz pomysł na własne narzędzie? Napisz do mnie — ustalimy szczegóły i cenę indywidualnie.</p>
     </div>
 
     <div class="section discord">
@@ -25,19 +47,5 @@
       <a href="https://discord.gg/yeKj85KN" class="btn discord-btn">Dołącz do Discorda</a>
     </div>
   </div>
-
-  <script>
-    fetch('projects.json')
-      .then(res => res.json())
-      .then(data => {
-        const container = document.getElementById('project-list');
-        data.forEach(p => {
-          const box = document.createElement('div');
-          box.className = 'project-box';
-          box.innerHTML = `<h3>${p.name}</h3><p>${p.desc}</p><a href="${p.link}" class="btn">Pobierz</a>`;
-          container.appendChild(box);
-        });
-      });
-  </script>
 </body>
 </html>
