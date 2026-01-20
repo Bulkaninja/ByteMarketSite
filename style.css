@@ -1,9 +1,23 @@
 body {
+  margin: 0;
   background: #0a0a0f;
   color: #fff;
-  font-family: sans-serif;
+  font-family: 'Segoe UI', sans-serif;
+}
+header {
+  background: #111;
+  padding: 20px;
   text-align: center;
-  padding: 50px;
+}
+nav a {
+  margin: 0 15px;
+  color: #00ffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+section {
+  padding: 40px;
+  text-align: center;
 }
 .btn {
   background: #00ffff;
@@ -12,7 +26,22 @@ body {
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
 }
 .btn:hover {
   background: #00cccc;
+}
+.project {
+  background: #111;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+}
+footer {
+  background: #111;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
 }
