@@ -6,8 +6,59 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>ByteMarket Launcher</h1>
-  <a href="https://bulkaninja.github.io/download/ByteMarket-Launcher-Setup.exe" class="btn">Pobierz Launcher</a>
-  <p>Dołącz do naszego Discorda: <a href="https://discord.gg/yeKj85KN">Kliknij tutaj</a></p>
+  <header>
+    <h1>ByteMarket</h1>
+    <nav>
+      <a href="#launcher">Launcher</a>
+      <a href="#projekty">Projekty</a>
+      <a href="#funkcje">Funkcje</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
+
+  <section id="launcher">
+    <h2>ByteMarket Launcher</h2>
+    <p>Twój kosmiczny dostęp do narzędzi</p>
+    <a href="https://bulkaninja.github.io/download/ByteMarket-Launcher-Setup.exe" class="btn">Pobierz Launcher</a>
+  </section>
+
+  <section id="projekty">
+    <h2>Projekty</h2>
+    <div id="project-list"></div>
+  </section>
+
+  <section id="funkcje">
+    <h2>Funkcje ByteMarketu</h2>
+    <ul>
+      <li><strong>Overlaye:</strong> HUD-y, wskaźniki, stream tools</li>
+      <li><strong>Narzędzia dla twórców:</strong> generatory, automatyzacje</li>
+      <li><strong>Eksperymenty:</strong> prototypy, bety, lab tools</li>
+    </ul>
+  </section>
+
+  <section id="kontakt">
+    <h2>Kontakt</h2>
+    <p>Masz pomysł, błąd albo chcesz współpracować?</p>
+    <a href="https://discord.gg/yeKj85KN" class="btn">Dołącz do Discorda</a>
+    <p>Email: <a href="mailto:kontakt@bytemarket.pl">kontakt@bytemarket.pl</a></p>
+  </section>
+
+  <footer>
+    <p>© 2026 ByteMarket | Made by youngbulka</p>
+  </footer>
+
+  <script>
+    fetch('projects.json')
+      .then(res => res.json())
+      .then(data => {
+        const container = document.getElementById('project-list');
+        data.forEach(p => {
+          const box = document.createElement('div');
+          box.className = 'project';
+          box.innerHTML = `<h3>${p.name}</h3><p>${p.desc}</p><a href="${p.link}" class="btn">Pobierz</a>`;
+          container.appendChild(box);
+        });
+      });
+  </script>
 </body>
 </html>
