@@ -1,11 +1,11 @@
 body {
   margin: 0;
-  background-color: #0a0a0f;
+  background: radial-gradient(circle at top, #0f0f1a, #000);
   color: #fff;
   font-family: sans-serif;
 }
 .container {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 40px 20px;
 }
@@ -13,18 +13,22 @@ body {
   text-align: center;
   font-size: 48px;
   color: #00ffff;
-  text-shadow: 0 0 10px #00ffff;
+  text-shadow: 0 0 15px #00ffff, 0 0 30px #00ffff;
   margin-bottom: 60px;
 }
 .section {
   margin-bottom: 60px;
   text-align: center;
+  border: 2px solid #00ffff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 0 20px #00ffff33;
 }
 .section h2 {
   font-size: 28px;
   margin-bottom: 20px;
   color: #00ffff;
-  text-shadow: 0 0 5px #00ffff;
+  text-shadow: 0 0 10px #00ffff;
 }
 .btn {
   background: #00ffff;
@@ -33,19 +37,30 @@ body {
   text-decoration: none;
   border-radius: 6px;
   font-weight: bold;
-  box-shadow: 0 0 10px #00ffff;
+  box-shadow: 0 0 15px #00ffff;
   display: inline-block;
   margin-top: 10px;
+  transition: 0.3s;
 }
 .btn:hover {
   background: #00cccc;
-  box-shadow: 0 0 20px #00ffff;
+  box-shadow: 0 0 25px #00ffff;
+}
+.discord-btn {
+  background: #5865F2;
+  color: #fff;
+  box-shadow: 0 0 15px #5865F2;
+}
+.discord-btn:hover {
+  background: #4752c4;
+  box-shadow: 0 0 25px #5865F2;
 }
 .project-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
+  margin-top: 30px;
 }
 .project-box {
   background: #111;
@@ -53,11 +68,12 @@ body {
   border-radius: 10px;
   padding: 20px;
   width: 260px;
-  box-shadow: 0 0 10px #00ffff33;
+  box-shadow: 0 0 15px #00ffff33;
 }
 .project-box h3 {
   margin-top: 0;
   color: #00ffff;
+  text-shadow: 0 0 5px #00ffff;
 }
 .project-box p {
   font-size: 14px;
