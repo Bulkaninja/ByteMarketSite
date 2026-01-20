@@ -86,3 +86,13 @@ body {
   font-size: 16px;
   color: #ccc;
 }
+.creator p {
+  font-size: 16px;
+  color: #ccc;
+  margin: 10px 0;
+}
+.creator strong {
+  color: #00ffff;
+  text-shadow: 0 0 5px #00ffff;
+}
+
