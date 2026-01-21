@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "name": "CrossByte",
+    "desc": "Bot Discord z AI, który odpowiada na wiadomości, wykonuje komendy i wspiera administrację.",
+    "link": "https://bulkaninja.github.io/ByteMarket/projects/CrossByte.exe"
+  },
+  {
+    "name": "AutoClicker",
+    "desc": "Prosty i szybki auto klikacz do gier i automatyzacji zadań.",
+    "link": "https://bulkaninja.github.io/ByteMarket/projects/AutoClicker.exe"
+  },
+  {
+    "name": "ByteGuard",
+    "desc": "Narzędzie do monitorowania aktywności systemu i wykrywania podejrzanych procesów.",
+    "link": "https://bulkaninja.github.io/ByteMarket/projects/ByteGuard.exe"
+  },
+  {
+    "name": "Custom Tool",
+    "desc": "Zamów własne narzędzie — opisz co potrzebujesz, a ja to zrobię. Cena do ustalenia.",
+    "link": "https://discord.gg/yeKj85KN"
+  }
+]
